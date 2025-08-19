@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="detail-header">
+            <h1 id="cityName">City Weather Forecast</h1>
+            <button class="close-btn" onclick="window.close()">Close</button>
+        </div>
+        <div class="loading" id="loading">Loading forecast data...</div>
+        <div class="error" id="error"></div>
+        <div class="forecast-container" id="forecastContainer"></div>
+    </div>
+    <script src="detail-renderer.js"></script>
+</body>
+</html>
