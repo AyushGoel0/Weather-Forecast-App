@@ -12,6 +12,7 @@ async function fetchForecast(cityName) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
+        console.log(data);
         return data;
     } catch (error) {
         console.error(`Error fetching forecast for ${cityName}:`, error);
